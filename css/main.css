@@ -1,0 +1,183 @@
+/* main */
+#main{
+    display: flex;
+    flex-flow:column wrap;
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+
+.card__head{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ========= */
+.btn{
+    margin: 1px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    display: block;
+}
+
+.btn-dorado{
+    background-color: #cda434;
+    color: #fff;
+}
+/* =========== */
+.card{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 5px;
+    border: 1px solid #cda434;
+    align-items: center;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.card__content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+    border-top-style: double;
+    border-color: #cda434;
+}
+
+.card__content__title{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.card__content__desc{
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.card__content__links{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.card__content__links__btn__groups{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.card__content__links__btn__groups__link{
+    width: 80%;
+    padding: 5px 10px;
+}
+
+.card__content__links__btn__groups__link a{
+    display: flex;
+    text-decoration: none;
+    color: #cda434;
+    width: 100%;
+    border: #cda434 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.fa-link{
+    margin-right: 5px;
+}
+
+.card__content__links__btn__groups__link a:hover{
+    background-color:#cda434;
+    color: #fff;
+}
+
+.card__tooltip{
+    display: flex;
+    width: 10%;
+    align-items: center;
+}
+
+.card__tooltip--btn{
+    color: #fff;
+    position: relative;
+    width: 10%;
+}
+
+.fa-exclamation-circle{
+    font-size: 1.6rem;
+    color: #cda434;
+}
+
+.card__tooltip--btn:hover .tooltip__cuadrado{
+    display: inline;
+}
+
+.card__tooltip--btn:hover .card__tooltip--content{
+    display: inline;
+}
+
+.tooltip__cuadrado{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    transform: rotate(50deg);
+    background-color: #9d2449;
+    top: 8px;
+    left: -4px;
+    display: none;
+    transition: all 0.5s;
+    border-top-right-radius: 50px;
+}
+
+.card__tooltip--content{
+    background-color: #9d2449;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+    transition: all 0.5s;
+    top: 0px;
+    left: 25px;
+    z-index: 1;
+}
+
+.card__tooltip__content--text{
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 600px){
+    #main{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }   
+  
+    .card{
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 900px){
+    .card{
+        width: 25%;
+    }
+}

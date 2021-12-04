@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Editar</title>
+</head>
+<body>
+    <div id="header">
+        <div class="header__title">
+            <a class="" href="index.html">
+                ISSET
+            </a>
+        </div>
+        <div class="header__content">
+            <div class="header__content__subtitle">
+                <a href="index.html">
+                    <div class="header__content__subtitle--h1">
+                        Sistemas administrativos y financieros
+                    </div>
+                    <div class="header__content__subtitle--h2">
+                        Directorio de sistemas internos
+                    </div>
+                </a>
+            </div>
+            <div class="header__content__form">
+                <form action="index.html" method="Get">
+                    <input
+                        id="search"
+                        type="text"
+                        name="buscar"
+                        placeholder="buscar...">
+                </form>
+            </div>
+            <div class="header__content__menu">
+                <button id="btnMenu" class="button__menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a href="index.html">inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="create.html">crear</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content__form">
+            <form id="formEdit" action="" method="POST" enctype="multipart/form-data">
+                <div class="form__title">Directorios</div>
+                <div class="form__section">
+                    <div class="form__item">
+                        <input  id="nameDirectorio"
+                                class="form__item--input" 
+                                type="text" 
+                                name="name"
+                                placeholder="name">
+                        <small id="error_nameDirectorio" class="danger"></small>
+                    </div>
+                    <div class="form__item">
+                        <textarea   class="form__item--text" 
+                                    placeholder="desc" 
+                                    name="description" 
+                                    id="description" 
+                                    cols="20" 
+                                    rows="5"></textarea>
+                        <small id="error_decription" class="danger"></small>
+                    </div>
+                    <div class="form__item">
+                        <input  class="input__file" 
+                                id="file" 
+                                type="file" 
+                                name="icon"
+                                >
+
+                        <button id="btnFile" 
+                                class="button__block" 
+                                type="button">
+                                Icono
+                                <i class="fas fa-arrow-alt-circle-up"></i>
+                        </button>
+
+                        <small id="error_file" class="danger"></small>
+                    </div>
+                </div>
+                <div class="form__section">
+                    <div class="form__title">Links</div>
+                    <div class="form__links">
+                        <!-- <div class="links">
+                            <div class="form__item">
+                                <input  class="form__item--input link-input" 
+                                        type="text" 
+                                        name="name"
+                                        id="name_1"
+                                        placeholder="name">
+                                <small class="err_name danger"></small>
+                            </div>
+                            <div class="form__item">
+                                <input  class="form__item--input link-input" 
+                                        type="text" 
+                                        name="link" 
+                                        id="link_1"
+                                        placeholder="link">
+                                <small class="err_link danger"></small>
+                            </div>
+                            <div class="form__item">
+                                <input  class="form__item--input"
+                                        type="text"
+                                        id="requerimients"
+                                        name="requerimients" 
+                                        placeholder="requerimient">
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="form__item--button">
+                        <button id="btnAdd" 
+                                type="button" 
+                                class="button__add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        
+                        <button id="btnMin"
+                                type="button" 
+                                class="button__add">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <button id="btnEnviar"
+                            class="button__block"
+                            type="submit">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="modal modal__hidden">
+        <div class="modal__content modal__hidden">
+            
+            <div class="modal__content--body">
+                <div class="modal__content__body--btn-close">
+                    <div class="modal__content__btn--text">
+                        Acerca de esta aplicación
+                    </div>
+                    <button id="btnCloseModal" class="btn-close">
+                        <i class="far fa-window-close"></i>
+                    </button>
+                </div>
+                <div class="modal__content__body--item">
+                    esta aplicación es propiedad de Instituto de Seguridad Social del Estado de tabasco
+                </div>
+                <div class="modal__content__body--item">
+                    Nombre de la aplicación
+                </div>
+                <div class="modal__content__body--item">
+                    Directorios de sistemas internos isset
+                </div>
+                <div class="modal__content__body--item">
+                    Nombre clave de la aplicación
+                </div>
+                <div class="modal__content__body--item">
+                    directorio-app-isset
+                </div>
+                <div class="modal__content__body--item">
+                    versión de la aplicación
+                </div>
+                <div class="modal__content__body--item">
+                    1.0.0
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer__copyright">Instituto de Seguridad del Estado de Tabasco <i class="fas fa-copyright"></i> 2021</div>
+        <div class="footer__detalle">
+            <button id="btnAcercaDe" class="footer__detalle__btn">Acerca de esta pagina</button>
+        </div>
+    </div>
+    
+    <script src="js/validator.min.js"></script>
+    <script src="js/form_edit.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* footer */
+#footer{
+    border-top-style: solid;
+    border-color: #cda434;
+    background-color: #212121;
+    padding: 10px;
+    font-size: .9rem;
+    margin-top: 79px;
+    height: 80px;    
+}
+
+.footer__copyright{
+    text-align: center;
+    color: #fff;
+}
+
+.footer__detalle{
+    text-align: center;
+}
+
+.footer__detalle__btn{
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+.footer__detalle__btn:hover{
+    color: #9d2449;
+}

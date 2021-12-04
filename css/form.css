@@ -1,0 +1,101 @@
+/* 
+    color danger: #dc3545;
+    color success: #198754;
+*/
+.content__form{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 95%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #cda434;
+}
+
+.form__item{
+    margin: 10px 0px;
+}
+
+.form__item--input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border-color: none;
+}
+
+.input__file{
+    display: none;
+}
+
+.button__block{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #cda434;
+    border: none;
+    color: #fff;
+}
+
+.form__item--text{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border-color: none;
+}
+
+.form__item--button{
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button__add{
+    background-color: #cda434;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+}
+
+.fa-plus{
+    font-size: 1rem;
+}
+
+.links{
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+}
+
+.success{
+    border-color: rgb(23, 189, 23);
+}
+
+.danger{
+    color: #dc3545;
+}
+
+.form__title{
+    color: #fff;
+}
+
+.fa-arrow-alt-circle-up{
+   font-size: 1rem;
+}
+
+@media (min-width: 600px){
+    .content__form{
+        width: 70%;
+    }
+}
+
+@media (min-width: 900px){
+    .content__form{
+        width: 50%;
+    }
+}
