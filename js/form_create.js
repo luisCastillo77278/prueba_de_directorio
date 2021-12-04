@@ -175,7 +175,7 @@ btnSubmit.addEventListener('click', async ()=>{
         console.log(directorio);
         const resp = await postDirectorio(directorio);
         console.log(resp);
-        // location.replace('http://localhost/directorio-sistemas-internos/index.html');
+        location.replace('http://localhost/directorio-sistemas-internos/index.html');
     }
 });
 
