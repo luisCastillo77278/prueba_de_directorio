@@ -1,4 +1,4 @@
-const url = "http://localhost/directorio-sistemas-internos/Api/controllers/directorio.php";
+const url = `${location.origin}/${location.pathname.split('/')[1]}/Api/controllers/directorio.php`;
 const getDirectorios = async () => {
   try {
     const resp = await fetch(`${url}?op=getDirectorioLinks`).then((resp) =>

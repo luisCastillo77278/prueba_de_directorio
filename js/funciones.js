@@ -58,7 +58,7 @@ export const createCards = (docLinks) => {
             <i class="fas fa-pen"></i>
         </a>
     </div>
-    <img src="http://localhost/prueba/ApiPrueba/public/img/${docLinks.icon}" alt="">
+    <img src="${location.origin}/${location.pathname.split('/')[1]}/Api/public/img/${docLinks.icon}" alt="icono">
     <div class="card__content">
       <div class="card__content__title">${ docLinks.name.charAt(0).toUpperCase()+docLinks.name.slice(1)} </div>
       <div class="card__content__desc">${docLinks.desc.charAt(0).toUpperCase()+docLinks.name.slice(1)}</div>

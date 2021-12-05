@@ -73,7 +73,7 @@
             $img =  $_FILES['icon'];
             $extencion = pathinfo($img['name'], PATHINFO_EXTENSION);
             $file = basename($img['tmp_name']).".".$extencion;
-            $direccion = getenv('URL_FILE').$file;
+            $direccion = $FILE_PATH_ROOT."/public/img/".$file;
             if(!file_exists($direccion)){
                 if(move_uploaded_file( $img['tmp_name'], $direccion)){
                     echo json_encode(array('resp'=>'ok', 'icon'=>$file));

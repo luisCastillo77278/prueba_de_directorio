@@ -182,7 +182,7 @@ let countLinks = 0;
 let countEliminar = 0;
 
 if(!params.has('id')){
-    location.replace('http://localhost/directorio-sistemas-internos');
+    location.replace(`${location.origin}/${location.pathname.split('/')[1]}/`);
 }else{
     const id = params.get('id');
     getDirectorio(id)
@@ -268,7 +268,7 @@ btnEnviar.addEventListener('click', async()=>{
             await postLinks( newLinks );
         }
 
-        location.replace('http://localhost/directorio-sistemas-internos/index.html');
+        location.replace(`${location.origin}/${location.pathname.split('/')[1]}/`);
     
     }
 })
